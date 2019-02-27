@@ -1,0 +1,1308 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1476039967.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dm="http://www.owl-ontologies.com/AGVs.owl#"
+    xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+  xml:base="file:/D:/AGVsModel/Goals.owl">
+  <owl:Ontology rdf:about="http://www.owl-ontologies.com/Goal.owl">
+    <owl:imports>
+      <owl:Ontology rdf:about="http://www.owl-ontologies.com/AGVs.owl"/>
+    </owl:imports>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DecisionAgent">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ToDown">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DestinationPosition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DestinationInfo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ElevatorSensorArea">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ElevatorSensor">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DataState">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorFloor">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartPosition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartInfo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Recycle">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DestinationFloor">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DestinationInfo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#GoalState">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#LocatedBook">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#LiftState">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DomainConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartElevator"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Empty">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#LightWeight">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVCall">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Predicate"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVState">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVFloor">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVInfo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartElevator"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVWeightCapacity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVInfo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Commitment"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#PathState">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#label"/>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartElevator"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#DestinationInfo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVLocation">
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVPosition"/>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVInfo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Cart">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVInfo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartInfo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartElevator"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartPickup">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#OrderState">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CurrentPath">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartElevator">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#HighWeight">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#OrderforLift">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ContextState">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#State"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVCallState">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ToUP">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#BookISBN">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CurrentWeight">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#CartInfo"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorCall">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Agent">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Order">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVPosition">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVLocation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartElevator"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#matchedBy">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Commitment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#sameFloor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#domainOProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#hasActor">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasAntecedent">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Commitment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasOutConstraints">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#argument1">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#argument2">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#samePosition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#domainOProperty"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasDebtor">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Commitment"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#hasState">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#GoalState"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#hasSubgoals">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasConsequent">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Commitment"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#notsameFloor">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#domainOProperty"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#hasFinState">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasCreditor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Commitment"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#Label">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#leastDistance">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#domainOProperty"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasInConstraints">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#domainOProperty">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#DomainConcept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#agent-has-capability">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Agent"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasPosition">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/AGVs.owl#domainOProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Recycle"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Recycle"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Recycle"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Recycle"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#Recycle"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#propertyPredicate">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Predicate"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#delete">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#Capability"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#hasTrgCondtion">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Goal"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ContextState"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_has_state">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVState"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#currentWeight">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/AGVs.owl#currentFloor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV"/>
+          <owl:Class rdf:about="http://www.owl-ontologies.com/AGVs.owl#CartSensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <GoalState rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Terminated"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S1"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#lift_hasstate_free">
+    <dm:propertyPredicate>
+      <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+    </dm:propertyPredicate>
+    <dm:argument2>
+      <dm:AGVState rdf:about="http://www.owl-ontologies.com/AGVs.owl#free"/>
+    </dm:argument2>
+    <dm:argument1>
+      <dm:CartElevator rdf:about="http://www.owl-ontologies.com/AGVs.owl#lift"/>
+    </dm:argument1>
+  </dm:ContextState>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#lessThan"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#greaterThan"/>
+  <dm:LiftState rdf:about="http://www.owl-ontologies.com/AGVs.owl#toDown">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ToDown"/>
+  </dm:LiftState>
+  <dm:AGVWeightCapacity rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVweightcapacity"/>
+  <dm:OrderState rdf:about="http://www.owl-ontologies.com/AGVs.owl#delivered"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:ElevatorSensor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:DestinationFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:LightWeight rdf:about="http://www.owl-ontologies.com/AGVs.owl#lightWeight"/>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#testGoal">
+    <hasFinState>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S10</rdfs:label>
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S10"/>
+        </dm:Label>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+        <dm:argument1>
+          <dm:AGV rdf:about="http://www.owl-ontologies.com/AGVs.owl#agv">
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#avoidObstacle">
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C10"/>
+                </dm:Label>
+                <dm:hasInConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#currentPath_hasstate_blooked">
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S16</rdfs:label>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S16"/>
+                    </dm:Label>
+                    <dm:argument2>
+                      <dm:PathState rdf:about="http://www.owl-ontologies.com/AGVs.owl#blocked"/>
+                    </dm:argument2>
+                    <dm:argument1>
+                      <dm:CurrentPath rdf:about="http://www.owl-ontologies.com/AGVs.owl#currentPath"/>
+                    </dm:argument1>
+                  </dm:ContextState>
+                </dm:hasInConstraints>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C10</rdfs:label>
+                <dm:delete>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#currentPath_hasstate_smooth">
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S15"/>
+                    </dm:Label>
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+                    <dm:argument2>
+                      <dm:PathState rdf:about="http://www.owl-ontologies.com/AGVs.owl#smooth"/>
+                    </dm:argument2>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#currentPath"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S15</rdfs:label>
+                  </dm:ContextState>
+                </dm:delete>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#takeoffCart">
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C9"/>
+                </dm:Label>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C9</rdfs:label>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#takeinCart">
+                <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C6"/>
+                </dm:Label>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C6</rdfs:label>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#movetoPickup">
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C5"/>
+                </dm:Label>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C5</rdfs:label>
+                <dm:hasInConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready">
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S2"/>
+                    </dm:Label>
+                    <dm:propertyPredicate>
+                      <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#is"/>
+                    </dm:propertyPredicate>
+                    <dm:argument1>
+                      <dm:CartPosition rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartPosition"/>
+                    </dm:argument1>
+                    <dm:argument2>
+                      <dm:DataState rdf:about="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+                    </dm:argument2>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S2</rdfs:label>
+                  </dm:ContextState>
+                </dm:hasInConstraints>
+                <dm:hasInConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed">
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S6"/>
+                    </dm:Label>
+                    <dm:argument2>
+                      <dm:AGVState rdf:about="http://www.owl-ontologies.com/AGVs.owl#reserved"/>
+                    </dm:argument2>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S6</rdfs:label>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+                  </dm:ContextState>
+                </dm:hasInConstraints>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#getPosition">
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C4</rdfs:label>
+                <dm:hasOutConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_is_ready">
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S3"/>
+                    </dm:Label>
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+                    <dm:argument1>
+                      <dm:AGVLocation rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVLosition"/>
+                    </dm:argument1>
+                    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S3</rdfs:label>
+                  </dm:ContextState>
+                </dm:hasOutConstraints>
+                <dm:hasInConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_on">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S5</rdfs:label>
+                    <dm:argument2>
+                      <dm:AGVState rdf:about="http://www.owl-ontologies.com/AGVs.owl#on"/>
+                    </dm:argument2>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S5"/>
+                    </dm:Label>
+                  </dm:ContextState>
+                </dm:hasInConstraints>
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C4"/>
+                </dm:Label>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#movetoElevator">
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C12</rdfs:label>
+                <dm:hasOutConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_in_elevatorSensorArea">
+                    <dm:argument2>
+                      <dm:ElevatorSensorArea rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorSensorArea"/>
+                    </dm:argument2>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+                    <dm:propertyPredicate>
+                      <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#in"/>
+                    </dm:propertyPredicate>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S19</rdfs:label>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S19"/>
+                    </dm:Label>
+                  </dm:ContextState>
+                </dm:hasOutConstraints>
+                <dm:hasOutConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall_is_available">
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+                    <dm:argument2>
+                      <dm:AGVCallState rdf:about="http://www.owl-ontologies.com/AGVs.owl#available"/>
+                    </dm:argument2>
+                    <dm:argument1>
+                      <dm:elevatorCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall"/>
+                    </dm:argument1>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S14</rdfs:label>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S14"/>
+                    </dm:Label>
+                  </dm:ContextState>
+                </dm:hasOutConstraints>
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C12"/>
+                </dm:Label>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#reverseAGV">
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C15"/>
+                </dm:Label>
+                <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready"/>
+                <dm:hasInConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVCall_is_available">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S4</rdfs:label>
+                    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#available"/>
+                    <dm:argument1>
+                      <dm:AGVCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVcall"/>
+                    </dm:argument1>
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S4"/>
+                    </dm:Label>
+                  </dm:ContextState>
+                </dm:hasInConstraints>
+                <dm:hasOutConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVCall_is_inavailable">
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVcall"/>
+                    <dm:argument2>
+                      <dm:AGVCallState rdf:about="http://www.owl-ontologies.com/AGVs.owl#inavailable"/>
+                    </dm:argument2>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S12</rdfs:label>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S12"/>
+                    </dm:Label>
+                  </dm:ContextState>
+                </dm:hasOutConstraints>
+                <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed"/>
+              </dm:Capability>
+            </dm:agent-has-capability>
+          </dm:AGV>
+        </dm:argument1>
+        <dm:argument2>
+          <dm:AGVState rdf:about="http://www.owl-ontologies.com/AGVs.owl#busy"/>
+        </dm:argument2>
+      </dm:ContextState>
+    </hasFinState>
+    <hasTrgCondtion>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_wait">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S20</rdfs:label>
+        <dm:argument1>
+          <dm:CartElevator rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevator">
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#transportCart">
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C14"/>
+                </dm:Label>
+                <dm:hasOutConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor_same_destinationfloor">
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S25"/>
+                    </dm:Label>
+                    <dm:propertyPredicate>
+                      <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#samefloor"/>
+                    </dm:propertyPredicate>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S25</rdfs:label>
+                    <dm:argument1>
+                      <dm:AGVFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+                    </dm:argument1>
+                    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+                  </dm:ContextState>
+                </dm:hasOutConstraints>
+                <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorcall_is_available"/>
+                <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_in_elevatorSensorArea"/>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C14</rdfs:label>
+              </dm:Capability>
+            </dm:agent-has-capability>
+            <dm:agent-has-capability>
+              <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#waitforTransport">
+                <dm:hasOutConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor_same_AGVfloor">
+                    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor"/>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S23"/>
+                    </dm:Label>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S23</rdfs:label>
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#samefloor"/>
+                  </dm:ContextState>
+                </dm:hasOutConstraints>
+                <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_wait"/>
+                <dm:delete rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorcall_is_available"/>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >C11</rdfs:label>
+                <dm:hasInConstraints>
+                  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_free">
+                    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >S22</rdfs:label>
+                    <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevator"/>
+                    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#free"/>
+                    <dm:Label>
+                      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S22"/>
+                    </dm:Label>
+                  </dm:ContextState>
+                </dm:hasInConstraints>
+                <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorcall_is_available"/>
+                <dm:Label>
+                  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C11"/>
+                </dm:Label>
+              </dm:Capability>
+            </dm:agent-has-capability>
+          </dm:CartElevator>
+        </dm:argument1>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+        <dm:argument2>
+          <dm:LiftState rdf:about="http://www.owl-ontologies.com/AGVs.owl#wait"/>
+        </dm:argument2>
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S20"/>
+        </dm:Label>
+      </dm:ContextState>
+    </hasTrgCondtion>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorcall_is_available"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_on"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_is_ready"/>
+    <hasTrgCondtion>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_off">
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S17"/>
+        </dm:Label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S17</rdfs:label>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+        <dm:argument2>
+          <dm:AGVState rdf:about="http://www.owl-ontologies.com/AGVs.owl#off"/>
+        </dm:argument2>
+        <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+      </dm:ContextState>
+    </hasTrgCondtion>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor_same_AGVfloor"/>
+    <hasTrgCondtion>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_busy">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S21</rdfs:label>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+        <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#busy"/>
+        <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevator"/>
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S21"/>
+        </dm:Label>
+      </dm:ContextState>
+    </hasTrgCondtion>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_free"/>
+    <hasTrgCondtion>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_free">
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S11"/>
+        </dm:Label>
+        <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+        <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#free"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S11</rdfs:label>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#hasstate"/>
+      </dm:ContextState>
+    </hasTrgCondtion>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVCall_is_available"/>
+    <hasState>
+      <GoalState rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+    </hasState>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVCall_is_available"/>
+    <hasTrgCondtion>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationPosition_is_ready">
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S8"/>
+        </dm:Label>
+        <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+        <dm:argument1>
+          <dm:DestinationPosition rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationPsotion"/>
+        </dm:argument1>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S8</rdfs:label>
+      </dm:ContextState>
+    </hasTrgCondtion>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_free"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVCall_is_inavailable"/>
+  </Goal>
+  <GoalState rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Pending"/>
+  <dm:HighWeight rdf:about="http://www.owl-ontologies.com/AGVs.owl#highWeight"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Empty rdf:about="http://www.owl-ontologies.com/AGVs.owl#empty"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:ElevatorSensor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#greaterThanOrEqual"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S13"/>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#take_off_cart">
+    <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#cartLocation_same_destinationLocation"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_free"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_same_destionationPosition"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+  </Goal>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:DestinationFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:AGVPosition rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVPosotion"/>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#select_suitableAGV">
+    <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed"/>
+  </Goal>
+  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartWeight_is_ready">
+    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+    <dm:argument1>
+      <dm:CurrentWeight rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartWeight"/>
+    </dm:argument1>
+    <dm:Label>
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S18"/>
+    </dm:Label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >S18</rdfs:label>
+  </dm:ContextState>
+  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S29"/>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#get_cart_destionation">
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationPosition_is_ready"/>
+    <hasTrgCondtion>
+      <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#cart_in_cartPickup">
+        <dm:argument1>
+          <dm:Cart rdf:about="http://www.owl-ontologies.com/AGVs.owl#cart"/>
+        </dm:argument1>
+        <dm:argument2>
+          <dm:CartPickup rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartPickup"/>
+        </dm:argument2>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >S1</rdfs:label>
+        <dm:Label rdf:resource="http://www.owl-ontologies.com/AGVs.owl#S1"/>
+        <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#in"/>
+      </dm:ContextState>
+    </hasTrgCondtion>
+    <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+  </Goal>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#sameposition"/>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#take_in_cart">
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_same_cartPosition"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed"/>
+    <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+  </Goal>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:CurrentWeight rdf:about="http://www.owl-ontologies.com/AGVs.owl#weight"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:AGVInfo rdf:about="http://www.owl-ontologies.com/AGVs.owl#agvInfo"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S1"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S7"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:ElevatorSensor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#are"/>
+  <dm:Order rdf:about="http://www.owl-ontologies.com/AGVs.owl#order"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:DestinationFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:AGVFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S1"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#lessThanOrEqual"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:AGVFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Recycle rdf:about="http://www.owl-ontologies.com/AGVs.owl#recycle"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:DestinationFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#movetoDestination">
+    <dm:delete rdf:resource="http://www.owl-ontologies.com/AGVs.owl#cart_in_cartPickup"/>
+    <dm:Label>
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C7"/>
+    </dm:Label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C7</rdfs:label>
+  </dm:Capability>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S1"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <GoalState rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Failed"/>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#noEqual"/>
+  <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S9"/>
+  <GoalState rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Statisfied"/>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#transport_cart_on_differentFloor">
+    <hasSubgoals>
+      <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#move_to_cart">
+        <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed"/>
+        <hasTrgCondtion>
+          <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartPosition_is_ready">
+            <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+            <dm:Label>
+              <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S28"/>
+            </dm:Label>
+            <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+            <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#cartPosition"/>
+          </dm:ContextState>
+        </hasTrgCondtion>
+        <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+        <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_same_cartPosition"/>
+      </Goal>
+    </hasSubgoals>
+    <hasSubgoals>
+      <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#transport_cart_on_sameFloor">
+        <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_same_destionationPosition"/>
+        <hasTrgCondtion>
+          <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready">
+            <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+            <dm:Label>
+              <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S26"/>
+            </dm:Label>
+            <dm:argument1>
+              <dm:DestinationInfo rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationInfo"/>
+            </dm:argument1>
+            <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+          </dm:ContextState>
+        </hasTrgCondtion>
+        <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVfloor_same_destinationfloor"/>
+        <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+        <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+      </Goal>
+    </hasSubgoals>
+    <hasSubgoals>
+      <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#transport_cart_to_destination_floor">
+        <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+        <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready"/>
+        <hasTrgCondtion>
+          <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor_notsame_destinationfloor">
+            <dm:Label>
+              <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S24"/>
+            </dm:Label>
+            <dm:argument1 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+            <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >S24</rdfs:label>
+            <dm:propertyPredicate>
+              <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#notSameFloor"/>
+            </dm:propertyPredicate>
+          </dm:ContextState>
+        </hasTrgCondtion>
+        <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+        <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVfloor_same_destinationfloor"/>
+      </Goal>
+    </hasSubgoals>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVfloor_notsame_destinationfloor"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_busy"/>
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVPosition_same_destionationPosition"/>
+  </Goal>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Resource">
+      <rdf:first rdf:resource="http://www.owl-ontologies.com/AGVs.owl#agv"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:OrderState rdf:about="http://www.owl-ontologies.com/AGVs.owl#completed"/>
+  <dm:CartSensor rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartSensor">
+    <dm:agent-has-capability>
+      <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#deliverCall">
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C3"/>
+        </dm:Label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C3</rdfs:label>
+        <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready"/>
+        <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready"/>
+        <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGVCall_is_available"/>
+      </dm:Capability>
+    </dm:agent-has-capability>
+    <dm:agent-has-capability>
+      <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#readTag">
+        <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready"/>
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C2"/>
+        </dm:Label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C2</rdfs:label>
+        <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#cart_in_cartPickup"/>
+      </dm:Capability>
+    </dm:agent-has-capability>
+    <dm:agent-has-capability>
+      <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#detectCart">
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C1"/>
+        </dm:Label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C1</rdfs:label>
+        <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready"/>
+        <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#cart_in_cartPickup"/>
+      </dm:Capability>
+    </dm:agent-has-capability>
+  </dm:CartSensor>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:AGVState rdf:about="http://www.owl-ontologies.com/AGVs.owl#running"/>
+  <GoalState rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#Active"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S1"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:BookISBN rdf:about="http://www.owl-ontologies.com/AGVs.owl#bookISBN"/>
+  <dm:ContextState rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartInfo_is_ready">
+    <dm:Label>
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#S27"/>
+    </dm:Label>
+    <dm:argument2 rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ready"/>
+    <dm:argument1>
+      <dm:CartInfo rdf:about="http://www.owl-ontologies.com/AGVs.owl#cartinfo"/>
+    </dm:argument1>
+    <dm:propertyPredicate rdf:resource="http://www.owl-ontologies.com/AGVs.owl#is"/>
+  </dm:ContextState>
+  <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#getinElevator">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C13</rdfs:label>
+    <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_wait"/>
+    <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_in_elevatorSensorArea"/>
+    <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#elevator_hasState_busy"/>
+    <dm:Label>
+      <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C13"/>
+    </dm:Label>
+  </dm:Capability>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:AGVFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:DecisionAgent rdf:about="http://www.owl-ontologies.com/AGVs.owl#decisionAgent">
+    <dm:agent-has-capability>
+      <dm:Capability rdf:about="http://www.owl-ontologies.com/AGVs.owl#selectNearestAvailableAGV">
+        <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready"/>
+        <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >C8</rdfs:label>
+        <dm:hasOutConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#AGV_hasstate_reversed"/>
+        <dm:Label>
+          <dm:label rdf:about="http://www.owl-ontologies.com/AGVs.owl#C8"/>
+        </dm:Label>
+      </dm:Capability>
+    </dm:agent-has-capability>
+  </dm:DecisionAgent>
+  <dm:LocatedBook rdf:about="http://www.owl-ontologies.com/AGVs.owl#locatedBook"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:AGVFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:AGVFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#AGVfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:ElevatorSensor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:DestinationFloor rdf:about="http://www.owl-ontologies.com/AGVs.owl#destinationfloor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:elevatorCall rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorcall"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <dm:ElevatorSensor rdf:about="http://www.owl-ontologies.com/AGVs.owl#elevatorSensor"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <dm:LiftState rdf:about="http://www.owl-ontologies.com/AGVs.owl#toUp">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/AGVs.owl#ToUP"/>
+  </dm:LiftState>
+  <dm:Predicate rdf:about="http://www.owl-ontologies.com/AGVs.owl#equal"/>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/AGVs.owl#movetoElevator1">
+    <dm:hasInConstraints rdf:resource="http://www.owl-ontologies.com/AGVs.owl#destinationInfo_is_ready"/>
+  </rdf:Description>
+  <Goal rdf:about="http://www.owl-ontologies.com/Ontology1476039967.owl#get_cart_position">
+    <hasFinState rdf:resource="http://www.owl-ontologies.com/AGVs.owl#pickupPosition_is_ready"/>
+    <hasState rdf:resource="http://www.owl-ontologies.com/Ontology1476039967.owl#Suspended"/>
+    <hasTrgCondtion rdf:resource="http://www.owl-ontologies.com/AGVs.owl#cart_in_cartPickup"/>
+  </Goal>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->

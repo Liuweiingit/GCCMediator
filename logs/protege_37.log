@@ -1,0 +1,93 @@
+2016.09.12 11:42:54.214 CST INFO: *** SYSTEM START ***
+2016.09.12 11:42:54.604 CST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.09.12 11:43:04.074 CST WARNING: [Local Folder Repository] The specified file must be a directory. (C:\Users\Administrator\workspace\RPT-plugin0504\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.09.12 11:43:05.214 CST INFO: Loading triples for: file:/E:/AGVsModel/AGVs1.owl -- ProtegeOWLParser.loadTriples()
+2016.09.12 11:43:05.542 CST INFO:     Completed triple loading after 328 ms -- ProtegeOWLParser.loadTriples()
+2016.09.12 11:43:05.542 CST INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.09.12 11:43:06.369 CST INFO: Loading triples for: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2016.09.12 11:43:06.385 CST INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2016.09.12 11:43:06.400 CST INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.09.12 11:43:07.228 CST INFO: Loading triples for: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2016.09.12 11:43:07.415 CST INFO:     Completed triple loading after 187 ms -- ProtegeOWLParser.loadTriples()
+2016.09.12 11:43:07.415 CST INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.09.12 11:43:07.415 CST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.09.12 11:43:07.415 CST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.09.12 11:43:07.415 CST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.09.12 11:43:07.415 CST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.09.12 11:43:07.431 CST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.09.12 11:43:07.431 CST INFO: Postprocess: Instances with multiple types (29 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.09.12 11:43:07.431 CST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.09.12 11:43:07.431 CST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.09.12 11:43:07.431 CST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.09.12 11:43:07.431 CST INFO: Postprocess: Process orphan classes (45 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.09.12 11:43:07.431 CST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.09.12 11:43:07.431 CST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.09.12 11:43:07.431 CST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.09.12 11:43:07.431 CST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.09.12 11:43:07.431 CST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.09.12 11:43:07.431 CST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.09.12 11:43:07.446 CST INFO: 15 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.09.12 11:43:07.446 CST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.09.12 11:43:07.446 CST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.09.12 11:43:07.446 CST INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.09.12 11:43:08.711 CST WARNING: Could not open default Profile file. Message: rethrew: java.io.FileNotFoundException: C:\Users\Administrator\workspace\RPT-plugin0504\plugins\edu.stanford.smi.protegex.owl\OWLProfiles.owl (系统找不到指定的路径。) -- ProfilesManager.getDefaultProfileOntModel()
+2016.09.12 11:43:09.461 CST INFO: SWRLJessBridge load failed: could not find jess.Rete - or an error occured on initialization -- BridgePluginManager.<clinit>()
+2016.09.12 11:43:09.461 CST INFO: SQWRLQueryTab load failed: could not find jess.Rete - or an error occured on initialization -- BridgePluginManager.<clinit>()
+2016.09.12 11:43:11.192 CST INFO: Load time for file:\E:\AGVsModel\AGVs1.pprj = 4 sec (project) + 3 sec (ui) -- ProjectManager$3.run()
+2016.09.12 11:43:50.661 CST INFO: ... saving successful to: E:\AGVsModel\AGVs1.owl -- Protege2Jena.saveAll()
+2016.09.12 13:43:15.616 CST INFO: *** SYSTEM START ***
+2016.09.12 13:43:15.975 CST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.09.12 13:43:19.127 CST WARNING: [Local Folder Repository] The specified file must be a directory. (C:\Users\Administrator\workspace\RPT-plugin0504\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.09.12 13:43:20.407 CST INFO: Loading triples for: file:/E:/AGVsModel/AGVs1.owl -- ProtegeOWLParser.loadTriples()
+2016.09.12 13:43:20.751 CST INFO:     Completed triple loading after 344 ms -- ProtegeOWLParser.loadTriples()
+2016.09.12 13:43:20.751 CST INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.09.12 13:43:21.563 CST INFO: Loading triples for: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2016.09.12 13:43:21.578 CST INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2016.09.12 13:43:21.594 CST INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.09.12 13:43:22.422 CST INFO: Loading triples for: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2016.09.12 13:43:22.453 CST INFO:     Completed triple loading after 31 ms -- ProtegeOWLParser.loadTriples()
+2016.09.12 13:43:22.453 CST INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.09.12 13:43:22.453 CST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.09.12 13:43:22.453 CST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.09.12 13:43:22.453 CST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.09.12 13:43:22.453 CST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.09.12 13:43:22.453 CST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.09.12 13:43:22.453 CST INFO: Postprocess: Instances with multiple types (30 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.09.12 13:43:22.468 CST INFO: 15 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.09.12 13:43:22.468 CST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.09.12 13:43:22.468 CST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.09.12 13:43:22.468 CST INFO: Postprocess: Process orphan classes (45 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.09.12 13:43:22.468 CST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.09.12 13:43:22.468 CST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.09.12 13:43:22.468 CST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.09.12 13:43:22.468 CST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.09.12 13:43:22.484 CST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.09.12 13:43:22.484 CST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.09.12 13:43:22.484 CST INFO: 0 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.09.12 13:43:22.484 CST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.09.12 13:43:22.484 CST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.09.12 13:43:22.484 CST INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.09.12 13:43:24.013 CST WARNING: Could not open default Profile file. Message: rethrew: java.io.FileNotFoundException: C:\Users\Administrator\workspace\RPT-plugin0504\plugins\edu.stanford.smi.protegex.owl\OWLProfiles.owl (系统找不到指定的路径。) -- ProfilesManager.getDefaultProfileOntModel()
+2016.09.12 13:43:24.781 CST INFO: SWRLJessBridge load failed: could not find jess.Rete - or an error occured on initialization -- BridgePluginManager.<clinit>()
+2016.09.12 13:43:24.781 CST INFO: SQWRLQueryTab load failed: could not find jess.Rete - or an error occured on initialization -- BridgePluginManager.<clinit>()
+2016.09.12 13:43:26.482 CST INFO: Load time for file:\E:\AGVsModel\AGVs1.pprj = 4 sec (project) + 3 sec (ui) -- ProjectManager$3.run()

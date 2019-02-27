@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+
+Name: org.wit.rpt.ui.ICCTab.class
+Tab-Widget: True
+
